@@ -21,7 +21,7 @@ body {
 
 header {
     background-color: midnightblue;
-    text-align: center;
+    text-align: center ;
     padding: 20px;
 }
 
@@ -48,7 +48,7 @@ nav {
 }
 
 nav ul {
-    display: flex;
+    display: inline-flex;
     list-style-type: none;
     font-weight: 600;
     font-size: 18px;
