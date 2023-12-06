@@ -22,7 +22,7 @@ body {
 header {
     background-color: midnightblue;
     text-align: right;
-    padding: 0;
+    padding: 20px;
 }
 
 button {
@@ -146,7 +146,7 @@ footer {
     background-color: midnightblue;
     color: #ffd700;
     text-align: center;
-    padding: 0;
+    padding: 20px;
 }
 
 #thumbnail {
