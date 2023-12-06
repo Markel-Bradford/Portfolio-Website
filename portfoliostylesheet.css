@@ -21,7 +21,7 @@ body {
 
 header {
     background-color: midnightblue;
-    text-align: right;
+    text-align: center;
     padding: 20px;
 }
 
@@ -180,7 +180,7 @@ footer {
     }
 
     button {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     .hello {

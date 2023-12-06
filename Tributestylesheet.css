@@ -1,18 +1,18 @@
-body {
-  text-align: center;
-  font-family: Verdana, Tahoma;
-  background-image: url(Kirby.jpg);
-  color: aliceblue;
+body{
+    text-align: center;
+    font-family: Verdana, Tahoma;
+    background-image: url(Kirby.jpg);
+    color: aliceblue;
 }
 
-.background {
+.background{
   max-width: 100%;
   max-height: 100%;
   height: auto;
   width: auto\9; /* ie8 */
   background-color: black;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left:150px;
+  margin-right: 150px;
 }
 
 h1 {
@@ -20,53 +20,51 @@ h1 {
   margin-bottom: 0;
 }
 
-#main {
+#main{
   margin: 30px 8px;
   padding: 10px;
   position: relative;
 }
 
-img {
+img{
   display: block;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
 
-#img-div {
+#img-div{
   background: white;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
   border-radius: 10px;
-}
+  }
 
-#img-caption {
-  margin: 10px 0 -5px 0;
-  font-size: 17px; /* Add 'px' to the font size */
-  color: black;
-}
+  #img-caption{
+    margin: 10px 0 -5px 0;
+    font-size: 17;
+    color:black;
+  }
 
-ul {
-  text-align: left;
-  max-width: 100%;
-  margin: 0 auto 30px auto;
-  line-height: 1.5;
-  padding: 0;
-}
+  ul{
+    text-align: left;
+    max-width: 100%;
+    margin: 30px auto 30px auto;
+    line-height: 1.5;
+  }
 
-li {
-  margin: 15px 0;
-}
+  li{
+    margin: 15px 0;
+  }
 
-#tribute-info {
-  font-size: 18px;
-  line-height: 32px;
-  margin-bottom: 30px;
-}
+  #tribute-info{
+    font-size: 18px;
+    line-height: 32px;   /* within paragraph */
+    margin-bottom: 30px; /* between paragraphs */
+  }
 
-#year {
-  text-decoration-line: underline;
-}
-
+  #year{
+     text-decoration-line: underline;
+  }
 /* Media Queries for Responsive Design */
 
 /* Small screens */
