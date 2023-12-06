@@ -11,8 +11,6 @@ body {
 
 /*general container*/
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 20px;
     display: flexbox;
     text-align: center;
@@ -21,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px 10px;
 }
@@ -120,7 +118,7 @@ header p {
   justify-content: right;
   align-items: right;
   gap: 16px;
-  max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px 10px;
 }
@@ -159,7 +157,7 @@ h4{
   justify-content: center;
   align-items: center;
   gap: 16px;
-  max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 10px 10px;
 }
