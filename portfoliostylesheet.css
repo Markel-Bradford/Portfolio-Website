@@ -44,7 +44,7 @@ button:hover {
 
 nav {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
 }
 
 nav ul {
@@ -55,8 +55,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 5px;
-    margin-right: 15px;
+    padding: 10px;
     text-align: center;
     border: none;
     border-radius: 8px;
@@ -79,7 +78,6 @@ header h1 {
 .hello {
     text-align: center;
     font-size: 18px;
-    padding-right: 20px;
     color: midnightblue;
 }
 
@@ -126,14 +124,14 @@ h4 {
 }
 
 #skill {
-    width: 20vw; /* Set a small width */
+    width: 40vw; /* Set a small width */
     display: flex;
     text-align: center;
     margin: 0 auto;
 }
 
 .container-three {
-    display: flex;
+    display: inline-flex;
     text-align: center;
     flex-direction: column;
     gap: 16px;
