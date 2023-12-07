@@ -158,7 +158,7 @@ footer {
 }
 
 #icon {
-    width: 125px; /* Set a small width */
+    width: 70px; /* Set a small width */
 }
 
 #thumbnail:hover {
@@ -232,6 +232,10 @@ footer {
 
     nav ul li a {
         font-size: 22px;
+    }
+
+    #icon {
+        width: 140px; /* Set a small width */
     }
 
 }
