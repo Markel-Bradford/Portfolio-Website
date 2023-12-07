@@ -133,6 +133,12 @@ h4 {
     margin: 0 auto;
 }
 
+#skill-1 {
+    width: 10vw; /* Set a small width */
+    display: flex;
+    text-align: center;
+    margin: 0 auto;}
+
 .container-three {
     display: inline-flex;
     text-align: center;
