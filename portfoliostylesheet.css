@@ -20,9 +20,9 @@ body {
 }
 
 header {
-    background-color: midnightblue;
     text-align: center ;
     padding: 0;
+    position: sticky;
 }
 
 button {
@@ -42,16 +42,21 @@ button:hover {
     box-shadow: 0 0 4px 2px white;
 }
 
-nav {
+#navbar {
+  background-color: midnightblue;
     width: 100%;
     margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:80px;
 }
 
 nav ul {
     display: inline-flex;
     list-style-type: none;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 
@@ -67,33 +72,40 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color:#fff;
+}
+
 header h1 {
     margin: 0;
 }
 
-.introduction {
+#welcome-section {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    height: 100%;
 }
 
 .hello {
     text-align: center;
-    font-size: 18px;
+    font-size: 45px;
     color: midnightblue;
+    margin-bottom: -35px;
 }
 
 .name {
-    font-size: 36px;
+    font-size: 120px;
 }
 
-
-header p {
-    margin: 5px 0;
+.who {
+    font-size: 60px;
 }
 
 .about-me,
 .projects,
 .contact {
+    font-size: 36px;
     padding: 20px 0;
 }
 
@@ -112,22 +124,22 @@ section h2 {
 }
 
 p {
-    line-height: 24px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    line-height: 4rem;
+    margin-left: 175px;
+    margin-right: 175px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
+    font-size: 36px;
     text-align: left;
 }
 
 
 h4 {
+    font-size: 40px;
     color: #ffd700;
     }
 
 #skill {
-    width: 35vw; /* Set a small width */
+    width: 30vw; /* Set a small width */
     display: flex;
     text-align: center;
     margin: 0 auto;
@@ -137,16 +149,7 @@ h4 {
     width: 10vw; /* Set a small width */
     display: flex;
     text-align: center;
-    margin: 0 auto;}
-
-.container-three {
-    display: inline-flex;
-    text-align: center;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 10px 10px;
+    margin: 20px auto 0 auto;
 }
 
 footer {
@@ -154,95 +157,115 @@ footer {
     color: #ffd700;
     text-align: center;
     padding: 0 20px;
+    height: 85px;
+}
+
+.footer-text {
+    padding-top: 20px;
+    font-size: 22px;
+    text-align: center;
 }
 
 .thumbnail {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 5px;
-    width: 60%;
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 #icon {
-    width: 70px; /* Set a small width */
+    width: 200px; /* Set a small width */
 }
 
 .thumbnail:hover {
     box-shadow: 0 0 8px 4px rgba(0, 140, 186, 0.5);
 }
 
-/* Responsive Styles */
 
-@media only screen and (min-width: 600px) {
-    .container {
-        padding: 30px;
+#profile-link {
+    margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 12px;
+  font-size: 24px;
+}
+
+#profile-link:hover {
+    background: black;
+}
+
+.profile-link {
+    color: #ffd700;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 430px) {
+    #navbar ul{
+        font-size: 14px;
     }
+
+    button {
+        font-size:14px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
 
     .name {
-        font-size: 80px;
+        font-size: 100px;
     }
 
-    header p {
+    nav ul {
         font-size: 18px;
     }
 
     button {
+        margin-top: 10px;
         font-size: 18px;
     }
 
+    #welcome-section {
+                padding-top:200px;
+                padding-bottom: 150px;
+    }
+
     .hello {
-        padding-right: 50px;
+        text-align: center;
     }
 
     p {
         font-size: 28px;
-        margin-left: 15vw;
-        margin-right: 15vw;
+        margin: 0 30px;
         line-height: 2;
     }
-}
 
-
-@media only screen and (min-width: 992px) {
-    .container {
-        padding: 40px;
-    }
-
-    header {
-        padding: 0px;
-    }
-
-    .name{
-        font-size: 100px;
-    }
-
-    h2{
-        font-size: 40px;
-    }
-
-    p{
-        margin: 0 400px 20px 400px;
-    }
-
-    h4{
+    #about-me, #projects, #contact {
         font-size: 36px;
     }
 
-    .container-two,
-    .container-three {
-        flex-direction: row;
+    h3 {
+        font-size: 36px;
     }
 
-    .hello{
-        font-size: 28px;
+    #skill {
+        width: 70vw;
     }
 
-    nav ul li a {
-        font-size: 22px;
+    #skill-1 {
+        width: 25vw;
     }
 
-    #icon {
-        width: 140px; /* Set a small width */
+    h4 {
+        font-size: 32px;
     }
 
+    .footer-text {
+        font-size: 18px;
+    }
 }
