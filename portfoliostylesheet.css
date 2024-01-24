@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    overflox-x: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -27,16 +27,16 @@ header {
 }
 
 button {
-    background-color: black;
+    background-color: transparent;
     color: #ffd700;
-    border: none;
+    border: solid 2px;
     border-radius: 8px;
-    padding: 15px 32px;
+    padding: 10px 25px;
     text-align: right;
     text-decoration: none;
-    display: inline-flex;
-    font-size: 18px;
-    margin-bottom: 0;
+    display: block;
+    font-size: 22px;
+    margin-top: -12px;
 }
 
 button:hover {
@@ -202,13 +202,13 @@ footer {
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 430px) {
+@media screen and (min-width:360px) and (max-width: 430px) {
     .name {
         font-size: 70px;
     }
     
     #navbar ul{
-        font-size: 14px;
+        font-size: 14px;    
     }
 
     button {
@@ -218,21 +218,30 @@ footer {
     .footer-text {
         font-size: 14px;
     }
+
+    #icon { 
+        max-width: 150px;
+    }
 }
 
 @media only screen and (max-width: 960px) {
 
     .name {
-        font-size: 100px;
+        font-size: 80px;
     }
 
     nav ul {
-        font-size: 18px;
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    nav ul li {
+        font-size: 16px;
     }
 
     button {
-        margin-top: 10px;
-        font-size: 14px;
+        margin-top: -8px;
+        font-size: 16px;
         padding: 5px 10px;
     }
 
@@ -246,9 +255,13 @@ footer {
     }
 
     p {
-        font-size: 28px;
+        font-size: 22px;
         margin: 0 30px;
         line-height: 2;
+    }
+
+    .container {
+        padding: 20px 0;
     }
 
     #about-me, #projects, #contact {
